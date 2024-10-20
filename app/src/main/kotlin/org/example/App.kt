@@ -12,4 +12,6 @@ class App {
 
 fun main() {
     println(App().greeting)
+
+    println("Running in thread ${Thread.currentThread().name}")
 }

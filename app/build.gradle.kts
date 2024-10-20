@@ -7,9 +7,10 @@
 
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
-    alias(libs.plugins.kotlin.jvm)
 
     // Apply the application plugin to add support for building a CLI application in Java.
+    kotlin("jvm") version "2.0.0"
+
     application
 }
 
@@ -29,12 +30,15 @@ dependencies {
 
     // This dependency is used by the application.
     implementation(libs.guava)
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
+
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(20)
     }
 }
 
