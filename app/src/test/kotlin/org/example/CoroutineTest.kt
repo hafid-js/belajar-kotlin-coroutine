@@ -5,8 +5,11 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Test
+<<<<<<< HEAD
 import java.util.Date
 import kotlin.concurrent.thread
+=======
+>>>>>>> origin/master
 
 class CoroutineTest {
 
@@ -26,6 +29,7 @@ class CoroutineTest {
         }
         println("SELESAI")
     }
+<<<<<<< HEAD
 
     @Test
     fun testThread() {
@@ -57,4 +61,6 @@ class CoroutineTest {
         println("Finish")
     }
 
+=======
+>>>>>>> origin/master
 }
